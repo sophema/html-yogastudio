@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traquil Spirit</title>
+    <style>
+      body {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #894949;
+        margin: 20px;
+        font-weight: 700;
+        font-family: "Ysabeau Infant";
+        line-height: 50px;
+      }
+      h2 {
+        text-align: center;
+        color: #894949;
+        font-family: "Ubuntu";
+        font-weight: 500;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        width: 400px;
+        border: 2px solid #e3e2e6;
+        border-radius: 20px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        padding: 10px 8px;
+        border: 1px solid #e3e2e6;
+        background-color: #be6c6c;
+        color: #ffffff;
+        border-radius: 20px;
+        font-family: "Montserrat";
+        box-shadow: 10px 10px 20px rgba(188, 181, 177, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #ffffff;
+        color: #be6c6c;
+        border: 1px solid #ccc6c6;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        font-family: "Ysabeau Infant";
+        font-size: 18px;
+        list-style: none;
+        color: #662102;
+        text-align: center;
+        font-weight: 300;
+        border-radius: 25px;
+        margin: 0 100px;
+        padding: 4px;
+        transition: all 200ms ease-in-out;
+      }
+      li:hover {
+        background-color: #fffeeb;
+      }
+      p {
+        text-align: center;
+        font-family: "Quicksand";
+        color: #662102;
+      }
+      a {
+        color: #b1a39e;
+        font-family: "Ubuntu";
+        transition: all 200ms;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      a:hover {
+        color: #662102;
+      }
+      hr {
+        border-top: 3px solid #be6c6c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧘<br />Traquil Spirit : Yoga Center</h1>
+    <img
+      src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80"
+      alt="Woman on a yoga mat"
+    />
+    <button>Book your trial lesson now</button>
+    <p>
+      Our Yoga Center is dedicated to creating a serene and nurturing space for
+      individuals to explore and deepen their yoga practice.
+      <strong>Our primary goal</strong> is to promote holistic well-being,
+      fostering a harmonious balance between the mind, body, and spirit.
+    </p>
+    <p>
+      We take pride in creating a <em>supportive</em> and
+      <em>inclusive</em> community. We emphasise the importance of fostering a
+      welcoming and non-judgmental environment, encouraging practitioners to
+      explore and expand their yoga journey at their own pace.
+    </p>
+    <hr />
+    <h2>Our classes:</h2>
+    <img
+      src="https://images.unsplash.com/photo-1552196527-bffef41ef674?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80"
+    />
+    <ul>
+      <li>Hatha Yoga</li>
+      <li>Vinyasa Yoga</li>
+      <li>Yin Yoga</li>
+      <li>Restorative Yoga</li>
+      <li>Ashtanga Vinyasa Yoga</li>
+    </ul>
+    <h2>Other services</h2>
+    <img
+      src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      alt="People practicing yoga"
+    />
+    <ul>
+      <li>Therapeutic Massages</li>
+      <li>Mindfull Workshops</li>
+      <li>Wellness Retreats</li>
+    </ul>
+    <a href="https://en.wikipedia.org/wiki/Yoga" target="_blank">
+      Learn more about yoga
+    </a>
+    <script>
+      function registerForClass() {
+        let name = prompt(
+          "Hello! Thank you for your interest. Plese, tell us your name."
+        );
+        let email = prompt("What is your e-mail?");
+        if (name.length > 0 && email.length > 0) {
+          alert("Thank you, " + name + "! We'll contact you soon! Namaste");
+        } else {
+          alert("😭");
+        }
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", registerForClass);
+    </script>
+  </body>
+</html>
